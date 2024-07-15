@@ -1,11 +1,93 @@
 <!doctype html>
 <html lang="ko">
 	<head>
-		<title>HTML5 Basic</title>
+		<title>html 시작하기</title>
 		<meta charset="utf-8">
 		<meta name = "20240715-update">
+		<link rel="stylesheet" href="css/SignUpPage.css">
 	</head>
 	<body>
-		<h1>Hello World!</h1>
+		<h1>html 기본 문법</h1>
+		<h2 id="level1">내용</h2>
+		<p>웹페이지 구조 이해하기 <br>
+			테이블 작성하기, 문자 입력하기 <br>
+			목록 작성, 이미지 삽입</p>
+		<hr>
+		<h2>하이버링크</h2>
+        <a href="http://www.naver.com">네이버</a><br> <!--절대경로-->
+        <a href="03/images/healing.jpg">힐링</a><br> <!--상대경로-->
+        <a href="#level1">내용 하이퍼링크</a><br> <!--id 하이퍼링크-->
+		<hr>
+		<h2>이미지 삽입</h2>
+		<img src="hoonssac.jpg" alt="이미지 파일이 존재하지 않습니다." width="120", height="120"> <!--이미지 삽입-->
+		<hr>
+		<h2>리스트</h2>
+		<ul>
+			<li>사과</li>
+			<li>바나나</li>
+			<li>오렌지</li>
+			<li>
+				<ol type="a">
+					<li>오렌지1</li>
+					<li>오렌지2</li>
+				</ol>
+			</li>
+		</ul>
+
+		<ol type="A">
+			<li>사과</li>
+			<li>바나나</li>
+			<li>오렌지</li>
+		</ol>
+		<hr>
+		<h2>테이블</h2>
+		<table border="10">
+			<thead>
+				<tr>
+					<th colspan="6">시간표</th>
+				</tr>
+				<tr>
+					<th></th>
+					<th>월</th>
+					<th>화</th>
+					<th>수</th>
+					<th>목</th>
+					<th>금</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">1교시</td>					
+					<td>국어</td>					
+					<td>영어</td>
+					<td>수학</td>
+					<td>과학</td>
+					<td>음악</td>
+				</tr>
+				<tr>
+					<td>국어</td>					
+					<td>영어</td>
+					<td>수학</td>
+					<td>과학</td>
+					<td>음악</td>
+				</tr>
+				<tr>
+					<td rowspan="2">2교시</td>					
+					<td>국어</td>					
+					<td>영어</td>
+					<td>수학</td>
+					<td>과학</td>
+					<td>음악</td>
+				</tr>
+				<tr>
+					<td>국어</td>					
+					<td>영어</td>
+					<td>수학</td>
+					<td>과학</td>
+					<td>음악</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
 	</body>
 </html>
